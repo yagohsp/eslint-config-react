@@ -1,5 +1,5 @@
 {
-  "name": "@yago.gif/eslint-prettier",
+  "name": "@yago.gif/eslint-config-yago.gif",
   "version": "1.0.1",
   "description": "A package with eslint and prettier for react environment",
   "main": "index.js",
