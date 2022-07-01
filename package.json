@@ -1,4 +1,26 @@
 {
+  "name": "@yago.gif/eslint-prettier",
+  "version": "1.0.1",
+  "description": "A package with eslint and prettier for react environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagohsp/eslint-prettier.git"
+  },
+  "keywords": [
+    "eslint",
+    "prettier",
+    "react"
+  ],
+  "author": "Yago Henrique dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagohsp/eslint-prettier/issues"
+  },
+  "homepage": "https://github.com/yagohsp/eslint-prettier#readme",
   "peerDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/runtime": "^7.17.9",
@@ -24,27 +46,5 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "prettier": "^2.6.2"
-  },
-  "name": "@yago.gif/eslint-prettier",
-  "version": "1.0.0",
-  "description": "A package with eslint and prettier for react environment",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yagohsp/eslint-prettier.git"
-  },
-  "keywords": [
-    "eslint",
-    "prettier",
-    "react"
-  ],
-  "author": "Yago Henrique dos Santos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yagohsp/eslint-prettier/issues"
-  },
-  "homepage": "https://github.com/yagohsp/eslint-prettier#readme"
+  }
 }
