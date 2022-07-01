@@ -26,8 +26,13 @@ module.exports ={
     'prettier/prettier': [
       "error",
       {
+        useTabs: false,
+        arrowParens: 'avoid',
+        singleQuote: true,
+        trailingComma: 'none',
+        endOfLine: 'auto',
         printWidth: 80,
-        useTabs: false
+        tabWidth: 2
       }
     ],
     'space-before-function-paren': "off",
