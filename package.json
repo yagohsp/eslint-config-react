@@ -1,15 +1,16 @@
 {
-  "name": "",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "react": "17.0.2"
+  "peerDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/runtime": "^7.17.9",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "prettier": "^2.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -23,5 +24,27 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "prettier": "^2.6.2"
-  }
+  },
+  "name": "@yagohsp/eslint-prettier",
+  "version": "1.0.0",
+  "description": "A package with eslint and prettier for react environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagohsp/eslint-prettier.git"
+  },
+  "keywords": [
+    "eslint",
+    "prettier",
+    "react"
+  ],
+  "author": "Yago Henrique dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagohsp/eslint-prettier/issues"
+  },
+  "homepage": "https://github.com/yagohsp/eslint-prettier#readme"
 }
