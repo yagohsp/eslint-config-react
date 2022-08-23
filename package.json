@@ -1,6 +1,6 @@
 {
   "name": "@yago.gif/eslint-config-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package with eslint and prettier for react environment",
   "main": "index.js",
   "scripts": {
