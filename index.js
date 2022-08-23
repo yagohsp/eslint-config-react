@@ -43,6 +43,7 @@ module.exports ={
     'no-console': "off",
     'arrow-parens': [2, "as-needed"],
     'react/jsx-props-no-spreading': "off",
+    'react/no-array-index-key': "off",
     'prefer-destructuring': "off"
   }
 }
