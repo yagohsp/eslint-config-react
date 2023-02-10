@@ -1,17 +1,34 @@
 # eslint-config-react
-ESLint configuration for React Project.
+ESLinter and Prettier configuration for React Project.
 
 ## How to install
-Run the following command to install the project's config:
+Run the following command to install the project's dependencies:
 ```
-npx install-peerdeps --dev @yago.gif/eslint-config-react
+npm i -D eslint && npx eslint --init && npx install-peerdeps --dev eslint-config-airbnb && npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 ## How to use
-To configure ESLinter and Prettier you can add to your `package.json`
+To configure ESLinter and Prettier 
+
+#### On .eslintrc file:
+
+```diff
+"extends": [
+-   "eslint:recommended",
++   "airbnb",
++   "airbnb/hooks",
+    "plugin:react/recommended",
++   "plugins:prettier/recommended"
+  ]
 ```
-"eslintConfig": {
-  "extends": "@yago.gif/eslint-config-react",
-},
-"prettier": "@yago.gif/prettier-config"
+
+#### Create a .prettierrc.json with:
 ```
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": true
+}
+```
+
