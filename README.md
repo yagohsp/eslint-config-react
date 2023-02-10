@@ -36,7 +36,8 @@ To configure ESLinter and Prettier
     "arrow-parens": [2, "as-needed"],
     "react/jsx-props-no-spreading": 0,
     "react/no-array-index-key": 0,
-    "prefer-destructuring": 0
+    "prefer-destructuring": 0,
+    "react/react-in-jsx-scope": 0
   }
 ```
 
