@@ -19,7 +19,11 @@ To configure ESLinter and Prettier
 +   "airbnb/hooks",
     "plugin:react/recommended",
 +   "plugins:prettier/recommended"
-  ]
+  ],
+  "rules": {
++    "react/react-in-jsx-scope": 0,
++    "comma-dangle": 0
+  }
 ```
 
 #### Create a .prettierrc.json with:
