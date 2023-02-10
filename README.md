@@ -10,19 +10,34 @@ npm i -D eslint && npx eslint --init && ( export PKG=eslint-config-airbnb; npm i
 ## How to use
 To configure ESLinter and Prettier 
 
-#### On .eslintrc file:
+#### On .eslintrc file set:
 
-```diff
+```
 "extends": [
--   "eslint:recommended",
-+   "airbnb",
-+   "airbnb/hooks",
-    "plugin:react/recommended",
-+   "plugins:prettier/recommended"
+   "airbnb",
+   "airbnb/hooks",
+   "plugin:react/recommended",
+   "plugins:prettier/recommended"
   ],
   "rules": {
-+    "react/react-in-jsx-scope": 0,
-+    "comma-dangle": 0
+    "prettier/prettier": ["error"],
+    "space-before-function-paren": 0,
+    "react/prop-types": 0,
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "import/no-cycle": 0,
+    "comma-dangle": 0,
+    "object-curly-newline": 0,
+    "no-console": 0,
+    "arrow-parens": [2, "as-needed"],
+    "react/jsx-props-no-spreading": 0,
+    "react/no-array-index-key": 0,
+    "prefer-destructuring": 0
   }
 ```
 
