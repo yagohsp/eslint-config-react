@@ -20,7 +20,6 @@ To configure ESLinter and Prettier
    "plugins:prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": ["error"],
     "space-before-function-paren": 0,
     "react/prop-types": 0,
     "react/jsx-filename-extension": [
