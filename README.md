@@ -4,50 +4,89 @@ ESLinter and Prettier configuration for React Project.
 ## How to install
 Run the following command to install the project's dependencies:
 ```
-npm i -D eslint && npx eslint --init && ( export PKG=eslint-config-airbnb; npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest") && npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+npm i -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier
 ```
 
 ## How to use
 To configure ESLinter and Prettier 
 
-#### On .eslintrc file set:
+#### On .eslintrc.json file set:
 
 ```
-"extends": [
-   "airbnb",
-   "airbnb/hooks",
-   "plugin:react/recommended",
-   "plugins:prettier/recommended"
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
   "rules": {
-    "space-before-function-paren": 0,
-    "react/prop-types": 0,
+    "no-param-reassign": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-array-index-key": "off",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
+    "import/no-unresolved": [2, { "ignore": ["@env"] }],
+    "comma-dangle": "off",
+    "object-curly-newline": "off",
+    "no-console": "off",
+    "arrow-parens": [2, "as-needed"],
+    "react/jsx-props-no-spreading": "off",
+    "prefer-destructuring": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "useTabs": false
+      }
+    ],
     "react/jsx-filename-extension": [
       "error",
       {
         "extensions": [".js", ".jsx"]
       }
-    ],
-    "import/prefer-default-export": 0,
-    "import/no-cycle": 0,
-    "comma-dangle": 0,
-    "object-curly-newline": 0,
-    "no-console": 0,
-    "arrow-parens": [2, "as-needed"],
-    "react/jsx-props-no-spreading": 0,
-    "react/no-array-index-key": 0,
-    "prefer-destructuring": 0,
-    "react/react-in-jsx-scope": 0
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["."]
+      }
+    }
   }
+}
 ```
 
 #### Create a .prettierrc.json with:
 ```
 {
-  "trailingComma": "es5",
-  "tabWidth": 2,
-  "singleQuote": true,
-  "semi": true
+  arrowParens: 'avoid',
+  singleQuote: true,
+  trailingComma: 'none',
+  endOfLine: 'auto',
+  printWidth: 80,
+  tabWidth: 2,
 }
 ```
 
