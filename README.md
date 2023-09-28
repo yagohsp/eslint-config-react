@@ -81,12 +81,12 @@ To configure ESLinter and Prettier
 #### Create a .prettierrc.json with:
 ```
 {
-  arrowParens: 'avoid',
-  singleQuote: true,
-  trailingComma: 'none',
-  endOfLine: 'auto',
-  printWidth: 80,
-  tabWidth: 2,
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "trailingComma": "none",
+  "endOfLine": "auto",
+  "printWidth": 80,
+  "tabWidth": 2
 }
 ```
 
